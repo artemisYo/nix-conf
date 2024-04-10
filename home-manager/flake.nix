@@ -9,9 +9,9 @@
 
     niri.url = "./niri/";
     niri.inputs.nixpkgs.follows = "nixpkgs";
-  };
+  } // (import ./wallpapers.nix);
 
-  outputs = { nixpkgs, home-manager, niri, ... }: {
+  outputs = { nixpkgs, home-manager, niri, cabin, ... }: {
     nixosModules.home-manager = home-manager.nixosModules.home-manager;
     nixosModules.niri = niri.nixosModules.niri;
     nixosModules.default = { pkgs, ... }: {
@@ -20,9 +20,10 @@
           ./nushell.nix
           niri.nixosModules.default
         ];
-      custom.niri.wallpaperPath = let
-        wallpapers = import ./wallpapers.nix;
-      in wallpapers.cabin;
+      #custom.niri.wallpaperPath = let
+      #  wallpapers = import ./wallpapers.nix;
+      #in wallpapers.cabin;
+      custom.niri.wallpaperPath = cabin;
       
       custom.niri.enable = true;
       custom.foot.enable = false;
