@@ -3,14 +3,9 @@
 
   inputs = {
     nixpkgs.url = "github:NixOs/nixpkgs/nixos-unstable";
-    home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    # niri.url = "github:sodiboo/niri-flake";
-    # niri.inputs.nixpkgs.follows = "nixpkgs";
-    #
-    # wofi-pm-flake.url = "github:szaffarano/wofi-power-menu";
-    # wofi-pm-flake.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.url = "./home-manager/";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { nixpkgs, home-manager, ... }: {
@@ -28,20 +23,16 @@
           ./dm.nix
           # enable flakes
           { nix.settings.experimental-features = [ "nix-command" "flakes" ]; }
-          # enable niri
-          # niri.nixosModules.niri
-          # {
-          #   programs.niri.enable = true;
-          # }
-          # enable home-manager config
+          # enable niri and home manager
           home-manager.nixosModules.home-manager
+          home-manager.nixosModules.niri
           {
-          #   nixpkgs.overlays =
-          #     [ (niri.overlays.niri)
-          #       (final: prev: { wofi-pm = wofi-pm-flake.defaultPackage.x86_64-linux; })
-          #     ];
+            programs.niri.enable = true;
+          }
+          # enable home-manager config
+          {
             home-manager.useGlobalPkgs = true;
-            home-manager.users.artemis = import ./home-manager.nix;
+            home-manager.users.artemis = home-manager.nixosModules.default;
           }
         ];
       };

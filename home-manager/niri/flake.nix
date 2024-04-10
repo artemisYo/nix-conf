@@ -13,16 +13,19 @@
 
   outputs = { nixpkgs, niri, wofi-pm, ... }: {
     nixosModules.niri = niri.nixosModules.niri;
-    nixosModules.default = { pkgs, config, lib, ... }: let
+    nixosModules.default = { config, lib, ... }: let
       cfg = config.custom.niri;
+      pkgs = import nixpkgs {
+        system = "x86_64-linux";
+        overlays =
+          [ niri.overlays.niri
+            (final: prev: { wofi-pm = wofi-pm.defaultPackage.x86_64-linux; })
+          ]; };
     in {
-      nixpkgs.overlays =
-        [ (niri.overlays.niri)
-          (final: prev: { wofi-pm = wofi-pm.defaultPackage.x86_64-linux; })
-        ];
       imports =
         [ ./foot.nix
           ./kitty.nix
+          ./swaylock.nix
           ./firefox.nix
           ./dunst.nix
           ./ironbar.nix
@@ -47,8 +50,7 @@
           type = types.path;
         };
       };
-      config = lib.mkIf cfg.enable {
-        programs.niri.enable = true;
+      config = lib.mkIf cfg.enable {        
         programs.wofi.enable = true;
 
         home.packages =
