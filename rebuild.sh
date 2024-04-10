@@ -1,5 +1,7 @@
 #! /bin/sh
 
+nix flake lock
+
 git add .
 
 counter=`cat .counter`
