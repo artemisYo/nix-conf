@@ -10,7 +10,7 @@
     niri.url = "./niri/";
     niri.inputs.nixpkgs.follows = "nixpkgs";
 
-    wallpapers = "./wallpapers/";
+    wallpapers.url = "./wallpapers/";
   };
 
   outputs = { nixpkgs, home-manager, niri, wallpapers, ... }: {
