@@ -8,5 +8,9 @@
     flowersYellowWall.url = "file+https://images.unsplash.com/photo-1710599901865-0506a7cf062e";
   };
 
-  outputs = {}: {};
+  outputs = papers: {
+    nixosModules.default = { ... }: {
+      custom.niri.wallpaperPath = papers.cabin;
+    };
+  };
 }
