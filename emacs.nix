@@ -1,10 +1,18 @@
 { pkgs, ... }: let
   nur-no-pkgs = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {};
+
+  tex = (pkgs.texlive.combine { inherit (pkgs.texlive)
+    scheme-basic dvisvgm dvipng
+    wrapfig amsmath ulem hyperref capt-of
+  ;});
 in {
   imports = 
     [ nur-no-pkgs.repos.rycee.hmModules.emacs-init 
     ];
-  home.packages = [ pkgs.fira-code ];
+  home.packages =
+    [ pkgs.fira-code
+      tex
+    ];
 
   programs.emacs.init = {
     enable = true;
@@ -17,7 +25,7 @@ in {
 
       (set-face-attribute 'default
                           nil
-                          :height 140
+                          :height 180
                           :family "Fira Code")
     '';
     prelude = ''
@@ -39,6 +47,14 @@ in {
       (line-number-mode)
 
       (defalias 'yes-or-no-p 'y-or-n-p)
+
+      (add-to-list 'custom-theme-load-path "${builtins.fetchTree {
+        type = "sourcehut";
+        owner = "~theorytoe";
+        repo = "everforest-theme";
+        rev = "703b16b742b753f6ad077b5c7f51947d1926c530";
+      }}")
+      (load-theme 'everforest-hard-dark t)
     '';
     usePackage = {
       nix-mode.enable = true;

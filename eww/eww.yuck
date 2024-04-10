@@ -1,0 +1,16 @@
+(defwindow clock
+		   :monitor 0
+		   :geometry (geometry :x "10%"
+		   			 		   :y "10%"
+							   :width "250px"
+							   :height "250px"
+							   :anchor "top left")
+		   :stacking "bottom"
+		   :exclusive false
+		   :focusable false
+  (label :text time
+  		 :justify "right"
+		 :class "time-text"))
+
+(defpoll time :interval "30s"
+  "date '+%a %B%n%k:%M%n%Y'")

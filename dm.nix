@@ -1,13 +1,12 @@
 { pkgs, ... }: let
-  userName = "demo";
+  userName = "artemis";
   autologin = false;
   defaultwm = "niri";
 in {
-  # services.xserver.enable = pkgs.lib.mkForce false;
+  services.xserver.enable = true;
   services.xserver.displayManager = {
     defaultSession = defaultwm;
-    # needed because of fucken virtualbox default profile
-    autoLogin.enable = pkgs.lib.mkForce autologin;
+    autoLogin.enable = autologin;
     autoLogin.user = userName;
     gdm = {
       enable = true;
