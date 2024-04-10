@@ -270,11 +270,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-QPjbleqIG3cWaD0fmFUeMDnA+59rSA4V+shO6/NYCbI=",
-        "path": "/nix/store/njaafra203rj0ji1ljw016kr7bpvjq8g-source/home-manager",
+        "path": "/nix/store/ypb6qw3i8jgp15z00whml00mkc6xjzhd-source/home-manager",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/njaafra203rj0ji1ljw016kr7bpvjq8g-source/home-manager",
+        "path": "/nix/store/ypb6qw3i8jgp15z00whml00mkc6xjzhd-source/home-manager",
         "type": "path"
       }
     },
