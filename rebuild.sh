@@ -4,6 +4,8 @@ git add .
 
 sudo nixos-rebuild --impure --flake ./ switch
 
+git add flake.lock
+
 counter=`cat .counter`
 ((counter=counter+1))
 
