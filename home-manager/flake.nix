@@ -13,7 +13,7 @@
     wallpapers = "./wallpapers/";
   };
 
-  outputs = { nixpkgs, home-manager, niri, ... }: {
+  outputs = { nixpkgs, home-manager, niri, wallpapers, ... }: {
     nixosModules.home-manager = home-manager.nixosModules.home-manager;
     nixosModules.niri = niri.nixosModules.niri;
     nixosModules.default = { pkgs, ... }: {
