@@ -40,11 +40,12 @@ in {
             save-interprogram-paste-before-kill t
             ring-bell-function 'ignore
             display-line-numbers-type 'relative)
+      (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.5))
       (setq-default indent-tab-mode nil
                     tab-width 4
                     c-basic-offset 4)
       (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
-      (line-number-mode)
+      (add-hook 'prog-mode-hook 'line-number-mode)
 
       (defalias 'yes-or-no-p 'y-or-n-p)
 
