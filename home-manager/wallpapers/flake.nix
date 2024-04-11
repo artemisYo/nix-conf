@@ -22,7 +22,7 @@
 
   outputs = {...}@papers: {
     nixosModules.default = { ... }: {
-      custom.niri.wallpaperPath = papers.cabin.outPath;
+      custom.niri.wallpaperPath = papers.castle.outPath;
     };
   };
 }
