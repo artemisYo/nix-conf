@@ -2,7 +2,7 @@
 
 git add .
 
-sudo nixos-rebuild --impure --flake ./ switch
+sudo nixos-rebuild --impure --flake ./ switch || exit 1
 
 counter=`cat .counter`
 ((counter=counter+1))

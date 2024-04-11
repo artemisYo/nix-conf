@@ -1,5 +1,17 @@
 {
   "nodes": {
+    "cabin": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-0q7G3uV33aX3JUykyyl89mDhqpYa8BehFOmhD0gRTY4=",
+        "type": "file",
+        "url": "https://images.unsplash.com/photo-1600890197174-a578edf49c1b"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://images.unsplash.com/photo-1600890197174-a578edf49c1b"
+      }
+    },
     "cachix": {
       "inputs": {
         "devenv": [
@@ -35,6 +47,18 @@
         "ref": "latest",
         "repo": "cachix",
         "type": "github"
+      }
+    },
+    "castle": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-jwY2EYv1zltfp3GYSCm/gvpMcXG259GTa4f0e7MMLR4=",
+        "type": "file",
+        "url": "https://images.unsplash.com/photo-1492502014314-f5522cae92a6"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://images.unsplash.com/photo-1492502014314-f5522cae92a6"
       }
     },
     "crate2nix": {
@@ -234,6 +258,18 @@
         "type": "github"
       }
     },
+    "flowersYellowWall": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-uCnwR1fkxUGBGIyQdnvrI82nG93Nk7yEKAjaL3yo/kU=",
+        "type": "file",
+        "url": "https://images.unsplash.com/photo-1710599901865-0506a7cf062e"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://images.unsplash.com/photo-1710599901865-0506a7cf062e"
+      }
+    },
     "gitignore": {
       "inputs": {
         "nixpkgs": [
@@ -265,16 +301,17 @@
         "niri": "niri",
         "nixpkgs": [
           "nixpkgs"
-        ]
+        ],
+        "wallpapers": "wallpapers"
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-QPjbleqIG3cWaD0fmFUeMDnA+59rSA4V+shO6/NYCbI=",
-        "path": "/nix/store/ln30rd2j5vr7cldbhcc118z490bqhric-source/home-manager",
+        "narHash": "sha256-AKWSDSPETFxrF37b/yJD6ZIc7zbfOtOc4wvWIhwNdJE=",
+        "path": "/nix/store/a4sbrdvy5627pxhf9gfhs8h8axdiclv0-source/home-manager",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/ln30rd2j5vr7cldbhcc118z490bqhric-source/home-manager",
+        "path": "/nix/store/a4sbrdvy5627pxhf9gfhs8h8axdiclv0-source/home-manager",
         "type": "path"
       }
     },
@@ -311,11 +348,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-QugNd3MVN2AqMpwwqmYB/RC6IuxFxw3i+jwspZb849w=",
-        "path": "/nix/store/xh5kdql4chihsp32mnjvsdyn7l1ci2hg-source/niri",
+        "path": "/nix/store/991334r9h3qs75w9f4micvqvv1fwg9d6-source/niri",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/xh5kdql4chihsp32mnjvsdyn7l1ci2hg-source/niri",
+        "path": "/nix/store/991334r9h3qs75w9f4micvqvv1fwg9d6-source/niri",
         "type": "path"
       }
     },
@@ -562,6 +599,36 @@
         "owner": "nix-systems",
         "repo": "default",
         "type": "github"
+      }
+    },
+    "topDownBuilding": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-b5ahkL7pDvdM0vzyW9fR7bF3dEwrhUxfVGx6PmRKGko=",
+        "type": "file",
+        "url": "https://images.unsplash.com/photo-1711100360031-24aaccbcd408"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://images.unsplash.com/photo-1711100360031-24aaccbcd408"
+      }
+    },
+    "wallpapers": {
+      "inputs": {
+        "cabin": "cabin",
+        "castle": "castle",
+        "flowersYellowWall": "flowersYellowWall",
+        "topDownBuilding": "topDownBuilding"
+      },
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-4yWHstZGXA9+v81vDXMWc8akyjqem1gWqB6BW/4jCnI=",
+        "path": "/nix/store/991334r9h3qs75w9f4micvqvv1fwg9d6-source/wallpapers",
+        "type": "path"
+      },
+      "original": {
+        "path": "/nix/store/991334r9h3qs75w9f4micvqvv1fwg9d6-source/wallpapers",
+        "type": "path"
       }
     },
     "wofi-pm": {
