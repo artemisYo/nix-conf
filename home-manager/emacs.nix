@@ -40,7 +40,8 @@ in {
             save-interprogram-paste-before-kill t
             ring-bell-function 'ignore
             display-line-numbers-type 'relative)
-      (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.5))
+      (eval-after-load "org"
+            '(setq org-format-latex-options (plist-put org-format-latex-options :scale 1.5)))
       (setq-default indent-tab-mode nil
                     tab-width 4
                     c-basic-offset 4)
