@@ -25,14 +25,14 @@
         ];
       
       custom.niri.enable = true;
-      custom.foot.enable = false;
+      # custom.foot.enable = true;
       custom.kitty.enable = true;
       custom.dunst.enable = true;
       custom.firefox.enable = true;
       custom.swaylock.enable = true;
       custom.niri.editorExec = [ "emacs" ];
       custom.niri.keyboardVariant = "";
-      custom.ironbar.enable = true;
+      # custom.ironbar.enable = true;
       custom.yambar.enable = true;
       custom.eww.enable = true;
 

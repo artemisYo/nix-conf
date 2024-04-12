@@ -7,6 +7,9 @@ in {
 
   config = lib.mkIf cfg.enable {
     home.packages = [ pkgs.yambar ];
+    programs.niri.settings.spawn-at-startup =
+      [{ command = [ "yambar" ]; }
+      ];
     home.file.".config/yambar/config.yml".text = ''
       bar:
         height: 20

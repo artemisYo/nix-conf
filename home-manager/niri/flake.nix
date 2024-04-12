@@ -103,7 +103,8 @@
           };            
           screenshot-path = "~/Pictures/Screenshots/";
           spawn-at-startup = 
-            [{ command = [ "swaybg" "-m" "fill" "-i" cfg.wallpaperPath ]; }];
+            [{ command = [ "swaybg" "-m" "fill" "-i" cfg.wallpaperPath ]; }
+            ];
           input.keyboard = {
             track-layout = "global";
             xkb.layout = "us";
