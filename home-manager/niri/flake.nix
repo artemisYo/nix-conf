@@ -30,6 +30,7 @@
           ./dunst.nix
           ./ironbar.nix
           ./eww.nix
+	  ./yambar.nix
         ];
       options.custom.niri = with lib; {
         enable = mkEnableOption "custom niri config";
