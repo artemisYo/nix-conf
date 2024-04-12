@@ -33,6 +33,7 @@
       custom.niri.editorExec = [ "emacs" ];
       custom.niri.keyboardVariant = "";
       custom.ironbar.enable = true;
+      custom.yambar.enable = true;
       custom.eww.enable = true;
 
       home.packages = with pkgs; [
