@@ -15,8 +15,8 @@ in {
         height: 20
         location: bottom
         font: Fira Code
-        foreground: ffffffff
-        background: 000000ff
+        foreground: a7c080FF
+        background: 2d353bFF
 
         center:
           - clock:
