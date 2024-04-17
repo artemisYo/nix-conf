@@ -30,12 +30,12 @@ in {
           - clock:
               time-format: "%H:%M"
               content:
-                - string: {text: "  {time} "}
+                - string: {text: " 󰥔 {time} "}
         right:
           - backlight:
               name: intel_backlight
               content:
-                - string: {text: "  {percent}% "}
+                - string: {text: " 󰖨 {percent}% "}
           - battery:
               name: BAT0
               content:
