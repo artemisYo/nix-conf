@@ -7,6 +7,14 @@ in {
 
   config = lib.mkIf cfg.enable {
     home.packages = [ pkgs.yambar ];
+    home.file.".local/share/fonts/symbols" = {
+      source = pkgs.fetchzip {
+        url = "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/NerdFontsSymbolsOnly.zip";
+        hash = "sha256-86iQmX9J3YpWoCVYGvlyi6A/6uJcPa2iU0MgCmekkiE=";
+        stripRoot = false;
+      };
+      recursive = true;
+    };
     programs.niri.settings.spawn-at-startup =
       [{ command = [ "yambar" ]; }
       ];
@@ -22,16 +30,16 @@ in {
           - clock:
               time-format: "%H:%M"
               content:
-                - string: {text: "{time}"}
+                - string: {text: "  {time} "}
         right:
           - backlight:
               name: intel_backlight
               content:
-                - string: {text: "{percent}%"}
+                - string: {text: "  {percent}% "}
           - battery:
               name: BAT0
               content:
-                - string: {text: "{capacity}%"}
+                - string: {text: "  {capacity}% "}
     '';
   };
 }
