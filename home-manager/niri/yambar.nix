@@ -20,9 +20,9 @@ in {
       ];
     home.file.".config/yambar/config.yml".text = ''
       bar:
-        height: 40
+        height: 30
         location: bottom
-        font: Fira Code:pixelsize=30:style=bold
+        font: Fira Code:pixelsize=18:style=bold
         foreground: a7c080FF
         background: 2d353bFF
 
