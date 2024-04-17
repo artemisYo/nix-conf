@@ -22,7 +22,7 @@ in {
       bar:
         height: 20
         location: bottom
-        font: Fira Code
+        font: Fira Code:style=bold
         foreground: a7c080FF
         background: 2d353bFF
 
