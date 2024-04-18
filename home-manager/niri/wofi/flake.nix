@@ -17,7 +17,13 @@
       };
     in {
       config = {
-        programs.wofi.enable = true;
+        programs.wofi = {
+          enable = true;
+          style = ''
+            * { font-family: Fira Code; }
+            window { background-color: "#232a2e"; }
+          '';
+        };
         home.packages = [ pkgs.wofi-pm ];
       };
     };
