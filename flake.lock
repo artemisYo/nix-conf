@@ -306,12 +306,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-hiUZ555usdzkoPKzYm1Y90tfT02Lkkrh5CWqIl9XzQg=",
-        "path": "/nix/store/6v5nlc6dg1wv82nlgplswfkm63y5syb8-source/home-manager",
+        "narHash": "sha256-jM70zmhFwBgV4CwIUkwKKQcqGoNfdgjSXffpBDe1fXA=",
+        "path": "/nix/store/1sqif4vdbz57p5kb0fv1gbqj71mmrw9d-source/home-manager",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/6v5nlc6dg1wv82nlgplswfkm63y5syb8-source/home-manager",
+        "path": "/nix/store/1sqif4vdbz57p5kb0fv1gbqj71mmrw9d-source/home-manager",
         "type": "path"
       }
     },
@@ -343,16 +343,16 @@
           "home-manager",
           "nixpkgs"
         ],
-        "wofi-pm": "wofi-pm"
+        "wofi-flake": "wofi-flake"
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-b6OGGkeo76nNU4w2Ug+FEXDT6S5xpjwYqRvFJjizc+Q=",
-        "path": "/nix/store/3xsdmyfhq5w8my95m3c9pkhwk6gzfym4-source/niri",
+        "narHash": "sha256-LBgrAF+DMzv6jnmr37mfDP1MbQWuIzVu1U7FBb3YfpU=",
+        "path": "/nix/store/4qh0rwv9jhvqp5by32wmn633as0hi741-source/niri",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/3xsdmyfhq5w8my95m3c9pkhwk6gzfym4-source/niri",
+        "path": "/nix/store/4qh0rwv9jhvqp5by32wmn633as0hi741-source/niri",
         "type": "path"
       }
     },
@@ -623,11 +623,31 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-4yWHstZGXA9+v81vDXMWc8akyjqem1gWqB6BW/4jCnI=",
-        "path": "/nix/store/3xsdmyfhq5w8my95m3c9pkhwk6gzfym4-source/wallpapers",
+        "path": "/nix/store/4qh0rwv9jhvqp5by32wmn633as0hi741-source/wallpapers",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/3xsdmyfhq5w8my95m3c9pkhwk6gzfym4-source/wallpapers",
+        "path": "/nix/store/4qh0rwv9jhvqp5by32wmn633as0hi741-source/wallpapers",
+        "type": "path"
+      }
+    },
+    "wofi-flake": {
+      "inputs": {
+        "nixpkgs": [
+          "home-manager",
+          "niri",
+          "nixpkgs"
+        ],
+        "wofi-pm": "wofi-pm"
+      },
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-kPUxwChy0fUFBnd6wSytoR1NVebMEMdwmgWUvL+dPgc=",
+        "path": "/nix/store/bpal36jmmm5lmycihg588yd39idy0qr4-source/wofi",
+        "type": "path"
+      },
+      "original": {
+        "path": "/nix/store/bpal36jmmm5lmycihg588yd39idy0qr4-source/wofi",
         "type": "path"
       }
     },
@@ -637,15 +657,16 @@
         "nixpkgs": [
           "home-manager",
           "niri",
+          "wofi-flake",
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1712720089,
-        "narHash": "sha256-PocluC2EbhEiM2+Kxvz2HT0A8J/sV1G2NYaPtiy5vfo=",
+        "lastModified": 1712843311,
+        "narHash": "sha256-KTgXiGTMuHs/h7fAM5KBwoed464sd2/2BM19I5LccVM=",
         "owner": "szaffarano",
         "repo": "wofi-power-menu",
-        "rev": "fcc7808a7d725e8a320f77fc1eee06f108d11987",
+        "rev": "ebfbd1700d58851b32140f6aabfead32fe7ad4db",
         "type": "github"
       },
       "original": {

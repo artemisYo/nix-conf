@@ -6,10 +6,10 @@ in {
     # enable dunst
     services.dunst.enable = true;
     services.dunst.settings.global = {
-      frame-color = "#101010";
-      background = "#505050";
-      foreground = "#ffffff";
-      highlight = "#f0a060"; # progress bars apparently
+      frame-color = "#a7c080";
+      background = "#232a2e";
+      foreground = "#d3c6aa";
+      highlight = "#a7c080"; # progress bars apparently
     };
     programs.niri.settings.spawn-at-startup = 
       [{ command = [ "dunst" ]; }];

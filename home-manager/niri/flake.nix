@@ -7,11 +7,13 @@
     niri.url = "github:sodiboo/niri-flake";
     niri.inputs.nixpkgs.follows = "nixpkgs";
 
-    wofi-pm.url = "github:szaffarano/wofi-power-menu";
-    wofi-pm.inputs.nixpkgs.follows = "nixpkgs";
+    wofi-flake.url = "./wofi/";
+    wofi-flake.inputs.nixpkgs.follows = "nixpkgs";
+    # wofi-pm.url = "github:szaffarano/wofi-power-menu";
+    # wofi-pm.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { nixpkgs, niri, wofi-pm, ... }: {
+  outputs = { nixpkgs, niri, wofi-flake, ... }: {
     nixosModules.niri = niri.nixosModules.niri;
     nixosModules.default = { config, lib, ... }: let
       cfg = config.custom.niri;
@@ -19,7 +21,7 @@
         system = "x86_64-linux";
         overlays =
           [ niri.overlays.niri
-            (final: prev: { wofi-pm = wofi-pm.defaultPackage.x86_64-linux; })
+            # (final: prev: { wofi-pm = wofi-pm.defaultPackage.x86_64-linux; })
           ]; };
     in {
       imports =
@@ -28,9 +30,8 @@
           ./swaylock.nix
           ./firefox.nix
           ./dunst.nix
-          ./ironbar.nix
-          ./eww.nix
-	  ./yambar.nix
+	        ./yambar.nix
+          wofi-flake.nixosModules.default
         ];
       options.custom.niri = with lib; {
         enable = mkEnableOption "custom niri config";
@@ -52,12 +53,12 @@
         };
       };
       config = lib.mkIf cfg.enable {        
-        programs.wofi.enable = true;
+        # programs.wofi.enable = true;
 
         home.packages =
           [ pkgs.swaybg
             pkgs.brightnessctl
-            pkgs.wofi-pm
+            # pkgs.wofi-pm
           ];            
                         
         programs.niri.package = pkgs.niri-unstable;
