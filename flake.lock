@@ -306,12 +306,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-YAV+l0VO5xVSAjbMkYezjTJ48Q97nbxytInLPrDx0k8=",
-        "path": "/nix/store/wbdkk6xaagp70q9ld6agik203p77qgli-source/home-manager",
+        "narHash": "sha256-Y7RYGRfUEFnmowLjxXVHX70YSBjJTIJaA5tx3Tfqv6E=",
+        "path": "/nix/store/7yzqj0l2z29l3lc7p93y4409dki7nsw2-source/home-manager",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/wbdkk6xaagp70q9ld6agik203p77qgli-source/home-manager",
+        "path": "/nix/store/7yzqj0l2z29l3lc7p93y4409dki7nsw2-source/home-manager",
         "type": "path"
       }
     },
@@ -347,12 +347,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-4WP2B59JPSAOHw4fP3fJisytICPhMO6yirQ96WOqaBY=",
-        "path": "/nix/store/i4iqyc46p5kg6sa8q5in8vizrh6jbnk5-source/niri",
+        "narHash": "sha256-ayZPh2wvVuSx1Cvetl4yAzaFrJCFuIkXZRBpmYFkODA=",
+        "path": "/nix/store/0s1nz71pb57gwf0c2dkydinb6zsqd1z6-source/niri",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/i4iqyc46p5kg6sa8q5in8vizrh6jbnk5-source/niri",
+        "path": "/nix/store/0s1nz71pb57gwf0c2dkydinb6zsqd1z6-source/niri",
         "type": "path"
       }
     },
@@ -623,11 +623,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-4yWHstZGXA9+v81vDXMWc8akyjqem1gWqB6BW/4jCnI=",
-        "path": "/nix/store/i4iqyc46p5kg6sa8q5in8vizrh6jbnk5-source/wallpapers",
+        "path": "/nix/store/0s1nz71pb57gwf0c2dkydinb6zsqd1z6-source/wallpapers",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/i4iqyc46p5kg6sa8q5in8vizrh6jbnk5-source/wallpapers",
+        "path": "/nix/store/0s1nz71pb57gwf0c2dkydinb6zsqd1z6-source/wallpapers",
         "type": "path"
       }
     },
@@ -642,12 +642,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-57fKEcVZaBmgd8L0oY81c1mpmsYuk7qc5cwjBcSmNJ0=",
-        "path": "/nix/store/lk0nifggk338nkyq930cmyy3lgv4fhpg-source/wofi",
+        "narHash": "sha256-rifUAKrNWqgA0bRzhtP9zZC52dFu62myZrBPc4c5oZ4=",
+        "path": "/nix/store/nrjlffyvzdn0fjcy6052rrazyf7lal79-source/wofi",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/lk0nifggk338nkyq930cmyy3lgv4fhpg-source/wofi",
+        "path": "/nix/store/nrjlffyvzdn0fjcy6052rrazyf7lal79-source/wofi",
         "type": "path"
       }
     },

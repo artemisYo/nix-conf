@@ -22,6 +22,11 @@
           style = ''
             * {
               font-family: Fira Code;
+            }
+            window {
+              background-color: "#232a2e";
+            }
+            #input {
               background-color: "#232a2e";
             }
           '';
