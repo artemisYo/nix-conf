@@ -306,12 +306,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-Y7RYGRfUEFnmowLjxXVHX70YSBjJTIJaA5tx3Tfqv6E=",
-        "path": "/nix/store/7yzqj0l2z29l3lc7p93y4409dki7nsw2-source/home-manager",
+        "narHash": "sha256-F7sPME/O7+tYlTPIRw54jD7OnbWwspNS7gIHmxJhpe8=",
+        "path": "/nix/store/4x76y4qrj3f976wisaxi2npli1rwzf3d-source/home-manager",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/7yzqj0l2z29l3lc7p93y4409dki7nsw2-source/home-manager",
+        "path": "/nix/store/4x76y4qrj3f976wisaxi2npli1rwzf3d-source/home-manager",
         "type": "path"
       }
     },
@@ -347,12 +347,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-ayZPh2wvVuSx1Cvetl4yAzaFrJCFuIkXZRBpmYFkODA=",
-        "path": "/nix/store/0s1nz71pb57gwf0c2dkydinb6zsqd1z6-source/niri",
+        "narHash": "sha256-TDSTx54/yIO6Bb6x46Jt5VPOlXeoepyg4J7WzUadm9Y=",
+        "path": "/nix/store/c7qc2l4l8phxgm1acnlah62m0jaq5j7v-source/niri",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/0s1nz71pb57gwf0c2dkydinb6zsqd1z6-source/niri",
+        "path": "/nix/store/c7qc2l4l8phxgm1acnlah62m0jaq5j7v-source/niri",
         "type": "path"
       }
     },
@@ -623,11 +623,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-4yWHstZGXA9+v81vDXMWc8akyjqem1gWqB6BW/4jCnI=",
-        "path": "/nix/store/0s1nz71pb57gwf0c2dkydinb6zsqd1z6-source/wallpapers",
+        "path": "/nix/store/c7qc2l4l8phxgm1acnlah62m0jaq5j7v-source/wallpapers",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/0s1nz71pb57gwf0c2dkydinb6zsqd1z6-source/wallpapers",
+        "path": "/nix/store/c7qc2l4l8phxgm1acnlah62m0jaq5j7v-source/wallpapers",
         "type": "path"
       }
     },
@@ -643,11 +643,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-rifUAKrNWqgA0bRzhtP9zZC52dFu62myZrBPc4c5oZ4=",
-        "path": "/nix/store/nrjlffyvzdn0fjcy6052rrazyf7lal79-source/wofi",
+        "path": "/nix/store/029p12kzqm1q52il8mp8r85qi9q0p8lg-source/wofi",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/nrjlffyvzdn0fjcy6052rrazyf7lal79-source/wofi",
+        "path": "/nix/store/029p12kzqm1q52il8mp8r85qi9q0p8lg-source/wofi",
         "type": "path"
       }
     },

@@ -31,6 +31,7 @@
           ./firefox.nix
           ./dunst.nix
 	        ./yambar.nix
+          ./rofi.nix
           wofi-flake.nixosModules.default
         ];
       options.custom.niri = with lib; {
