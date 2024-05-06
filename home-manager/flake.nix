@@ -33,7 +33,6 @@
       custom.niri.editorExec = [ "emacs" ];
       custom.niri.keyboardVariant = "";
       custom.yambar.enable = true;
-      custom.bemenu.enable = true;
 
       home.packages = with pkgs; [
         git # nixos-rebuild shits itself otherwise

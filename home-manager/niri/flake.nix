@@ -31,7 +31,6 @@
           ./firefox.nix
           ./dunst.nix
 	        ./yambar.nix
-          ./bemenu.nix
           wofi-flake.nixosModules.default
         ];
       options.custom.niri = with lib; {
@@ -40,9 +39,6 @@
           type = types.listOf types.str; 
         };
         editorExec = mkOption { 
-          type = types.listOf types.str; 
-        };
-        browserExec = mkOption {
           type = types.listOf types.str; 
         };
         keyboardVariant = mkOption {
@@ -72,7 +68,7 @@
             "Mod+P".action.spawn = [ "swaylock" ];
             "Mod+Return".action.spawn = cfg.termExec;
             "Mod+E".action.spawn = cfg.editorExec;
-            "Mod+B".action.spawn = cfg.browserExec;
+            "Mod+B".action.spawn = [ config.custom.browser ];
             "Mod+X".action.spawn = [ "wofi-power-menu" ];
             "Mod+Shift+TouchpadScrollRight".action.set-column-width = "+1%";
             "Mod+Shift+TouchpadScrollLeft".action.set-column-width = "-1%";
