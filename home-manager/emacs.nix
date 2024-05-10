@@ -46,7 +46,7 @@ in {
                     tab-width 4
                     c-basic-offset 4)
       (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
-      (add-hook 'prog-mode-hook 'display-line-number-mode)
+      (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
       (defalias 'yes-or-no-p 'y-or-n-p)
 
